@@ -32,15 +32,17 @@ class ViewController: UIViewController {
                 return
             }
             
-            let string = String(data: data, encoding: .utf8) ?? "nil"
+            let jsonDecoder = JSONDecoder()
             
-            print(Date(), #function, #line, data)
-            print(string)
+            guard let photoInfo = try? jsonDecoder.decode(PhotoInfo.self, from: data) else {
+                print(Date(), #function, #line, "Can't decode \(data)")
+                return
+            }
+            
+            print(#function, #line, photoInfo)
         }
         
         task.resume()
-        
-        print(Date(), #function, #line)
     }
 }
 

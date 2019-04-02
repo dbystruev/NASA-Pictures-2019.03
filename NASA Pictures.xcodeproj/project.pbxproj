@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6913EC542253D7FD004D06CD /* PhotoInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6913EC532253D7FD004D06CD /* PhotoInfo.swift */; };
 		699F9263224EA081008B2949 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 699F9262224EA081008B2949 /* AppDelegate.swift */; };
 		699F9265224EA081008B2949 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 699F9264224EA081008B2949 /* ViewController.swift */; };
 		699F9268224EA081008B2949 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 699F9266224EA081008B2949 /* Main.storyboard */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6913EC532253D7FD004D06CD /* PhotoInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoInfo.swift; sourceTree = "<group>"; };
 		699F925F224EA080008B2949 /* NASA Pictures.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "NASA Pictures.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		699F9262224EA081008B2949 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		699F9264224EA081008B2949 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -35,6 +37,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6913EC522253D7E9004D06CD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				6913EC532253D7FD004D06CD /* PhotoInfo.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		699F9256224EA080008B2949 = {
 			isa = PBXGroup;
 			children = (
@@ -54,6 +64,7 @@
 		699F9261224EA080008B2949 /* NASA Pictures */ = {
 			isa = PBXGroup;
 			children = (
+				6913EC522253D7E9004D06CD /* Model */,
 				699F9262224EA081008B2949 /* AppDelegate.swift */,
 				699F9264224EA081008B2949 /* ViewController.swift */,
 				699F9266224EA081008B2949 /* Main.storyboard */,
@@ -135,6 +146,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6913EC542253D7FD004D06CD /* PhotoInfo.swift in Sources */,
 				699F9265224EA081008B2949 /* ViewController.swift in Sources */,
 				699F9263224EA081008B2949 /* AppDelegate.swift in Sources */,
 			);
@@ -285,6 +297,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8J39KF9DMS;
 				INFOPLIST_FILE = "NASA Pictures/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -303,6 +316,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8J39KF9DMS;
 				INFOPLIST_FILE = "NASA Pictures/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
